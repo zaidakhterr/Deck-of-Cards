@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import Deck from '../Deck/Deck';
+
+import './App.scss';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Deck of cards</h1>
+      <Deck />
     </div>
   );
 }

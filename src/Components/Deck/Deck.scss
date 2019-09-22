@@ -1,0 +1,11 @@
+.Deck {
+  height: 100vh;
+  background: #141e30;
+  background: -webkit-linear-gradient(135deg, #000, #141e30);
+  background: linear-gradient(135deg, #000, #141e30);
+  color: #fff;
+
+  &-header {
+    font-size: 3rem;
+  }
+}
