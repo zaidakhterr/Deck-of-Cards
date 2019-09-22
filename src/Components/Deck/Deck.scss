@@ -1,11 +1,63 @@
+$cyan: rgb(15, 133, 11);
+$yellow: yellow;
 .Deck {
   height: 100vh;
   background: #141e30;
   background: -webkit-linear-gradient(135deg, #000, #141e30);
   background: linear-gradient(135deg, #000, #141e30);
-  color: #fff;
+  color: #ddd;
 
   &-header {
     font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px;
+
+    &:hover span {
+      transition: 0.5s all;
+      color: rgb(15, 133, 11);
+    }
+  }
+
+  &-cards {
+    margin-top: 100px;
+  }
+
+  .red {
+    color: rgba(231, 42, 42, 0.959);
+  }
+
+  &-content {
+    margin-top: 20px;
+
+    p {
+      cursor: default;
+      font-size: 2rem;
+      margin: 20px;
+      transition: 0.5s all;
+
+      &:hover span {
+        transition: 0.5s all;
+        color: rgb(15, 133, 11);
+      }
+    }
+
+    .Deck-button {
+      outline: none;
+      cursor: pointer;
+      color: inherit;
+      font-weight: bolder;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font: inherit;
+      padding: 10px 15px;
+      border: 2px solid #ddd;
+      background: none;
+      transition: 0.5s all;
+
+      &:hover {
+        border-color: rgb(15, 133, 11);
+      }
+    }
   }
 }

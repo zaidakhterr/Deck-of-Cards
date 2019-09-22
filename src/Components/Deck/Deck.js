@@ -37,20 +37,24 @@ export class Deck extends Component {
   render() {
     return (
       <div className='Deck'>
-        <h1 className='Deck-header'>Deck of Cards</h1>
+        <h1 className='Deck-header'>
+          <span>♦</span> Deck of Cards <span>♦</span>
+        </h1>
         {this.state.remaining > 0 ? (
-          <div class='Deck-content'>
-            <p>Cards Remaining : {this.state.remaining}</p>
+          <div className='Deck-content'>
+            <p>
+              Cards Remaining : <span>{this.state.remaining}</span>
+            </p>
             <button className='Deck-button' onClick={this.getCard}>
-              Gimme a Card
+              Draw Card
             </button>
           </div>
         ) : (
-          <div className='Deck-content'>
+          <div className='Deck-content red'>
             <p>You're out of cards. Refresh the page to load a new deck</p>
           </div>
         )}
-        <div className='Deck-Cards'>
+        <div className='Deck-cards'>
           {this.state.drawn.map(card => (
             <Card key={card.code} card={card} />
           ))}
